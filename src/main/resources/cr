@@ -1,0 +1,34 @@
+postbox317@gmail.com
+Ramya@253
+
+mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=false
+//our customized
+mvn 
+sonar:sonar -Dsonar.jacoco.reportPaths=target/coverage-reports/jacoco-unit.exec -Dsonar.projectName="jacoco" -Dsonar.projectKey="jacoco" -Dsonar.host.url=http://localhost:9000 -Dsonar.login=1f6ecc7db1c98bba43c379cd18422c1848492d2b -Dsonar.exclusions=**/src/**/**.java
+ 
+sonar:sonar -Dsonar.jacoco.reportPaths=target/coverage-reports/jacoco-unit.exec -Dsonar.host.url=http://localhost:9000 -Dsonar.login=1f6ecc7db1c98bba43c379cd18422c1848492d2b  -Dsonar.scm.disabled=true
+ //https://onlyfullstack.blogspot.com/2019/02/setting-up-sonar-server-locally.html
+ //remote 
+ mvn sonar:sonar -Dsonar.jacoco.reportPaths=target/coverage-reports/jacoco-unit.exec
+-Dsonar.projectName="scalable-web" -Dsonar.projectKey="scalable-web" 
+-Dsonar.host.url=http://localhost:9000
+ -Dsonar.login=1c01ff3138588827f552cc6e7d4971ed004f5874
+ 
+ http://localhost:9000/api/ce/task?id=AW6nA0LtGVrygdnR2T3S
+ sonar:sonar -Dsonar.jacoco.reportPaths=./target/coverage-reports/jacoco-unit.exec -Dsonar.projectName="jacoco" -Dsonar.projectKey="jacoco" -Dsonar.host.url=http://localhost:9000
+ -Dsonar.login=1f6ecc7db1c98bba43c379cd18422c1848492d2b -Dsonar.scm.disabled=true
+ 
+ 
+ 
+ 
+download sonarqube 5.5 zip version and unzip it add jacoco code coverage reports to the sonar qube 
+ 
+ 
+ maven commands 
+ to build jacoco reports 
+ clean install 
+ 
+ sonar:sonar  -Dsonar.scm.disabled=true
+ 
+ 
+ 
