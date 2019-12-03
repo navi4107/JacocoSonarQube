@@ -31,4 +31,16 @@ public class JacocoSonarQubeApplicationTests {
 		assertEquals("Hi", name);
 	}
 
+	@Test
+	public void sayHelloTest2() {
+		String name = testRestTemplate.getForObject("/mapping/avh", String.class);
+		assertEquals("helloa", name);
+	}
+
+	@Test
+	public void sayHelloTest3() {
+		String name = testRestTemplate.getForObject("/mapping/rth", String.class);
+		assertEquals("hellor", name);
+	}
+
 }
