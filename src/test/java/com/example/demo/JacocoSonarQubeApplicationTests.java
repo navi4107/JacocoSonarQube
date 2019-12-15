@@ -25,7 +25,7 @@ public class JacocoSonarQubeApplicationTests {
 		//https://ctl.atlassian.net/browse/AAD-17
 		//https://ne1itcprhas70.ne1.savvis.net:8443/view/HYPERION/job/HYPERION_STG/ 
 	}
-	@Test
+	/*@Test
 	public void sayHelloTest1() {
 		String name = testRestTemplate.getForObject("/mapping/avinash", String.class);
 		assertEquals("Hi", name);
@@ -42,5 +42,6 @@ public class JacocoSonarQubeApplicationTests {
 		String name = testRestTemplate.getForObject("/mapping/rth", String.class);
 		assertEquals("hellor", name);
 	}
+	*/
 
 }
