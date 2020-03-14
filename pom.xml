@@ -94,9 +94,9 @@
                 <minimum>0.80</minimum>
               </limit>
             </limits>
-            <excludes>
+          <!--  <excludes>
               <exclude>com.xyz.ClassToExclude</exclude>
-            </excludes>
+            </excludes>-->
           </rule>
         </rules>
       </configuration>
